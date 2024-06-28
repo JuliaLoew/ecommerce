@@ -9,16 +9,17 @@ import Women from './components/Women';
 import Jewelery from './components/Jewelery';
 
 const App = () => {
+  const [cart, setCart] = useState([]);
   return (
     <Router>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="Electronics" element={<Electronics />} />
-          <Route path="Men" element={<Men />} />
-          <Route path="Women" element={<Women />} />
-          <Route path="Jewelery" element={<Jewelery />} />
+          <Route path="/cart" element={<Cart cart={cart} />} />
+          <Route path="/Electronics" element={<Electronics />} />
+          <Route path="/Men" element={<Men />} />
+          <Route path="/Women" element={<Women />} />
+          <Route path="/Jewelery" element={<Jewelery />} />
         </Route>
       </Routes>
     </Router>

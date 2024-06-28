@@ -38,6 +38,7 @@ const Electronics = () => {
               <h2 className="text-xl font-bold">{product.title}</h2>
               <p className="text-gray-600">{product.category}</p>
               <p className="text-gray-800 font-bold">${product.price}</p>
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Add to card</button>
             </div>
           </li>
         ))}
